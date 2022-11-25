@@ -1,0 +1,38 @@
+@mixin greenbtn {
+    background: #365359;
+    border-radius: 20px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 26px;
+    text-decoration: none;
+}
+
+.secttitle {
+    margin: 0 0 16px 0;
+    text-align: center;
+    color: #1B264A;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+}
+
+.arrlink {
+    color: #1B264A;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 26px;
+    text-decoration: none;
+    position: relative;
+
+    &::after {
+        content: "";
+        position: absolute;
+        right: -32px;
+        top: 3px;
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        background: url(../img/linkarrow.svg) no-repeat center/100%;
+    }
+}
