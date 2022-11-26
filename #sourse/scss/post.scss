@@ -25,8 +25,8 @@
         margin: 0 0 20px 0;
         color: #1B264A;
         font-weight: 700;
-        font-size: 40px;
-        line-height: 48px;
+        font-size: 32px;
+        line-height: 52px;
         text-align: center;
     }
 
@@ -114,7 +114,7 @@
     }
 
     .postimgfullw {
-        margin-bottom: 68px;
+        margin-bottom: 52px;
 
         img {
             width: 100%;
@@ -126,7 +126,7 @@
 }
 
 .similarblogs {
-    padding: 36px 100px 97px;
+    padding: 36px 100px 72px;
 }
 
 .similarblogs {
@@ -143,6 +143,31 @@
     }
 }
 
+.waitlist.circlebox__clear {
+    padding: 0 100px 120px 100px;
+
+    .circlebox {
+        padding: 0;
+        max-width: 472px;
+        background: none;
+    }
+
+    .joinform__title {
+        font-size: 32px;
+        line-height: 52px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
 @media (max-width:1199.8px) {
     .postsect {
         padding: 80px 60px 36px;
@@ -156,7 +181,9 @@
         font-size: 26px;
     }
 
-
+    .waitlist.circlebox__clear .joinform__title {
+        text-align: left;
+    }
 
 
 
@@ -178,6 +205,10 @@
 
     .similarblogs {
         padding: 36px 60px 97px;
+    }
+
+    .waitlist.circlebox__clear {
+        padding: 0 60px 80px 60px;
     }
 }
 
@@ -228,7 +259,9 @@
         margin-bottom: 15px;
     }
 
-
+    .waitlist.circlebox__clear {
+        padding: 0 15px 30px 15px;
+    }
 
 
 

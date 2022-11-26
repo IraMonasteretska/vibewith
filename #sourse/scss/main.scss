@@ -37,7 +37,7 @@ p {
 }
 
 .welcomesect {
-    padding: 78px 0 0 60px;
+    padding: 52px 0 0 175px;
 }
 
 .welcomesect__container {
@@ -48,9 +48,9 @@ p {
 
 .welcomesect__info {
     width: 100%;
-    max-width: 38%;
-    flex: 0 0 38%;
-    padding-right: 105px;
+    max-width: 36.3%;
+    flex: 0 0 36.3%;
+    padding-right: 57px;
 
     h1 {
         font-weight: 700;
@@ -65,7 +65,7 @@ p {
     }
 
     p {
-        max-width: 394px;
+        max-width: 417px;
         font-weight: 500;
         line-height: 24px;
         margin: 0 0 44px 0;
@@ -76,7 +76,7 @@ p {
     display: flex;
     align-items: center;
     margin-bottom: 90px;
-    max-width: 394px;
+    max-width: 417px;
 
     a {
         width: 100%;
@@ -99,7 +99,7 @@ p {
 }
 
 .joinform {
-    max-width: 394px;
+    max-width: 417px;
 }
 
 .welcomesect__info .joinform__title {
@@ -157,9 +157,9 @@ p {
 
 .welcomesect__img {
     width: 100%;
-    max-width: 62%;
-    flex: 0 0 62%;
-    max-height: 558px;
+    max-width: 63.7%;
+    flex: 0 0 63.7%;
+    max-height: 523px;
     overflow: hidden;
     border-radius: 350px 0px 0px 350px;
 
@@ -174,7 +174,7 @@ p {
 
 // how it work
 .howitwork {
-    padding: 129px 120px 35px;
+    padding: 71px 120px 25px;
 }
 
 .sectdescr {
@@ -183,21 +183,30 @@ p {
     text-align: center;
     color: #425387;
     line-height: 24px;
-}
 
-.stepswrapper {
-    padding-top: 55px;
+    p {
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
 }
 
 .steprow {
     display: flex;
-    align-items: center;
     flex-wrap: wrap;
     margin-bottom: 50px;
     position: relative;
 
     &:last-child {
         margin-bottom: 0;
+    }
+}
+
+.steprow.steprow__center {
+    align-items: center;
+
+    .stepinfo {
+        padding-top: 0;
     }
 }
 
@@ -220,14 +229,15 @@ p {
     flex: 0 0 50%;
     padding-left: 65px;
     position: relative;
+    padding-top: 59px;
 
     .stepinfo__textbox {
         max-width: 508px;
 
         .title {
             font-weight: 700;
-            font-size: 40px;
-            line-height: 48px;
+            font-size: 32px;
+            line-height: 52px;
             color: #1B264A;
             margin: 0;
         }
@@ -235,8 +245,8 @@ p {
         .subtitle {
             margin: 0 0 11px 0;
             font-weight: 700;
-            font-size: 32px;
-            line-height: 52px;
+            font-size: 24px;
+            line-height: 40px;
             color: #A0B392;
         }
 
@@ -282,17 +292,17 @@ p {
             .steparrow {
                 position: absolute;
                 right: calc(50% - 66px);
-                bottom: -70px;
+                bottom: -110px;
             }
         }
 
         &:nth-child(2) {
-            margin-bottom: 100px;
+            margin-bottom: 157px;
 
             .steparrow {
                 position: absolute;
-                right: calc(50% - 66px);
-                bottom: -90px;
+                right: calc(50% - 100px);
+                bottom: -160px;
             }
         }
     }
@@ -300,7 +310,7 @@ p {
 
 // Featured blogs
 .featuredblogs {
-    padding: 100px 90px 100px 90px;
+    padding: 90px 90px 100px 90px;
 }
 
 .featuredblogs__wrapper {
@@ -388,12 +398,12 @@ p {
 // community
 
 .howitwork.community {
-    padding: 48px 167px 63px;
+    padding: 0 167px 22px;
 }
 
 // waitlist
 .waitlist {
-    padding: 0 67px 75px 67px;
+    padding: 0 67px 120px 67px;
     position: relative;
 }
 
@@ -438,22 +448,23 @@ p {
 
 
         .inputbtn {
-            max-width: 30%;
-            flex: 0 0 30%;
+            max-width: 42%;
+            flex: 0 0 42%;
+            font-weight: 600;
         }
 
         .inputfield {
-            max-width: calc(70% - 24px);
-            flex: 0 0 calc(70% - 24px);
+            max-width: calc(58% - 24px);
+            flex: 0 0 calc(58% - 24px);
         }
     }
 
     .joinform__title {
         font-weight: 700;
-        font-size: 40px;
-        line-height: 48px;
+        font-size: 32px;
+        line-height: 52px;
         color: #000;
-        margin: 0 0 40px 0;
+        margin: 0 0 20px 0;
     }
 }
 
@@ -514,6 +525,7 @@ p {
 }
 
 .featuredblogs__box {
+
     .blogarrlink,
     .articlebox {
         transition: 0.3s;
@@ -541,7 +553,42 @@ p {
     }
 }
 
+.featuredblogs__title {
+    position: relative;
 
+    h2 {
+        padding: 0 140px;
+    }
+
+    a {
+        color: #365359;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 24px;
+        text-decoration: none;
+        position: absolute;
+        right: 70px;
+        top: 14px;
+
+        &::after {
+            content: "";
+            position: absolute;
+            right: -32px;
+            top: 3px;
+            display: inline-block;
+            width: 16px;
+            height: 16px;
+            background: url(../img/linkarrow.svg) no-repeat center/100%;
+            transition: 0.3s;
+        }
+
+        &:hover {
+            &::after {
+                transform: translateX(10px);
+            }
+        }
+    }
+}
 
 
 
@@ -603,8 +650,8 @@ p {
         flex: 0 0 45%;
     }
 
-    .secttitle {
-        font-size: 36px;
+    .welcomesect {
+        padding: 52px 0 0 100px;
     }
 
     .howitwork {
@@ -626,10 +673,6 @@ p {
         width: 150px;
     }
 
-    .stepinfo .stepinfo__textbox .title {
-        font-size: 36px;
-    }
-
     .stepinfo .stepinfo__textbox .subtitle {
         font-size: 28px;
         line-height: 160%;
@@ -641,7 +684,7 @@ p {
     }
 
     .featuredblogs {
-        padding: 100px 60px 30px 60px;
+        padding: 70px 60px 30px 60px;
     }
 
     .featuredblogs__wrapper {
@@ -670,7 +713,7 @@ p {
     }
 
     .howitwork.community {
-        padding: 48px 60px 63px;
+        padding: 0 60px 22px;
     }
 
     .circlebox {
@@ -683,22 +726,27 @@ p {
         margin-bottom: 15px;
     }
 
+    .steprow {
+        align-items: center;
 
+        .stepinfo {
+            padding-top: 0;
+        }
+    }
+
+    .stepinfo .stepinfo__textbox .descr p {
+        font-size: 16px;
+        line-height: 160%;
+    }
+
+    .waitlist {
+        padding-bottom: 80px;
+    }
 
 }
 
 @media(max-width:991.8px) {
 
-    // .welcomesect__img,
-    // .welcomesect__info {
-    //     max-width: 100%;
-    //     flex: 0 0 100%;
-    // }
-
-    // .welcomesect__img {
-    //     margin-top: 30px;
-    //     max-height: 330px;
-    // }
     .welcomesect__container {
         align-items: inherit;
     }
@@ -777,9 +825,14 @@ p {
         margin-top: 25px;
     }
 
+    .welcomesect {
+        padding: 52px 0 0 60px;
+    }
 
-
-
+    .stepswrapper .steprow:nth-child(2) .steparrow {
+        right: calc(50% - 70px);
+        bottom: -140px;
+    }
 
 
 
@@ -864,6 +917,29 @@ p {
         position: relative;
     }
 
+    .featuredblogs__title h2 {
+        padding: 0;
+    }
+
+    .featuredblogs__title {
+        padding-bottom: 25px;
+        a {
+            right: initial;
+            display: inline-block;
+            top: initial;
+            bottom: 0;
+            right: 50px;
+            
+        }
+    }
+
+    .featuredblogs__wrapper {
+        margin-top: 15px;
+    }
+
+
+
+
 }
 
 @media(max-width:575.8px) {
@@ -918,8 +994,8 @@ p {
         padding: 50px 15px 30px 15px;
     }
 
-    .featuredblogs__wrapper {
-        margin-top: 0;
+    .featuredblogs__title {
+        padding-bottom: 30px;
     }
 
     .howitwork.community {

@@ -3,10 +3,10 @@
 
     h1 {
         text-align: center;
-        margin: 0 0 66px 0;
+        margin: 0 0 27px 0;
         font-weight: 700;
-        font-size: 40px;
-        line-height: 48px;
+        font-size: 32px;
+        line-height: 52px;
         color: #1B264A;
     }
 }
@@ -316,6 +316,11 @@
 
     .allblogs__header .allblogs__search {
         margin-bottom: 20px;
+    }
+
+    .blogmainsect h1 {
+        line-height: 160%;
+        margin-bottom: 10px;
     }
 
 }
