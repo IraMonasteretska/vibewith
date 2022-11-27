@@ -215,6 +215,56 @@
 
 }
 
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+
+    ul {
+        list-style-type: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+
+        li {
+            display: inline-flex;
+            margin: 0 5px;
+            a {
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                width: 36px;
+                max-width: 36px;
+                flex: 0 0 36px;
+                height: 36px;
+                border-radius: 50%;
+                text-decoration: none;
+                background: #e3e3e3;
+                border: 1px solid #e3e3e3;
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 30px;
+                color: #000;
+                transition: 0.3s;
+
+                &:hover {
+                    background-color: #fff;
+                    box-shadow: 0 5px 8px #e3e3e3;
+                }
+
+                img {
+                    vertical-align: top;
+                    max-width: 100%;
+                    max-height: 100%;
+                }
+            }
+        }
+    }
+}
+
+
 @media(max-width:991.8px) {
     .blogmainsect {
         padding-top: 50px;
