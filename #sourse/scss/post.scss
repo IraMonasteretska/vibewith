@@ -1,25 +1,12 @@
 .postsect {
-    padding: 90px 165px 0;
+    padding: 90px 145px 0;
 }
 
 .postsect {
     position: relative;
     padding-bottom: 36px;
 
-    &::after {
-        content: '';
-        display: block;
-        width: calc(100% - 200px);
-        max-width: 1440px;
-        height: 2px;
-        background: #D9D9D9;
-        border-radius: 10px;
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        margin: 0 auto;
-    }
+    
 
     h1 {
         margin: 0 0 20px 0;
@@ -42,7 +29,7 @@
 
     .tags {
         text-align: center;
-        margin-bottom: 30px;
+        margin-bottom: 11px;
 
         span {
             border: 1px solid #365359;
@@ -71,6 +58,7 @@
         font-size: 24px;
         line-height: 40px;
         margin: 0 0 20px 0;
+        margin-top: 26px;
     }
 
     h4,
@@ -85,6 +73,9 @@
 
     p {
         margin-bottom: 20px;
+        color: #425387;
+        font-size: 18px;
+        line-height: 28px;
 
         &:last-child {
             margin-bottom: 0;
@@ -92,7 +83,7 @@
     }
 
     .textsect {
-        padding-left: 25px;
+        padding-left: 10px;
     }
 
 
@@ -126,7 +117,7 @@
 }
 
 .similarblogs {
-    padding: 36px 100px 72px;
+    padding: 36px 145px 72px;
 }
 
 .similarblogs {
@@ -144,7 +135,7 @@
 }
 
 .waitlist.circlebox__clear {
-    padding: 0 100px 120px 100px;
+    padding: 0 115px 120px 115px;
 
     .circlebox {
         padding: 0;
@@ -158,10 +149,78 @@
     }
 }
 
+.postmainsect {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 36px;
+    align-items: center;
 
+    .postmainsect__left {
+        width: 100%;
+        max-width: 46.5%;
+        flex: 0 0 46.5%;
+        padding-right: 84px;
 
+        .descr {
+            p {
+                color: #425387;
+                font-size: 18px;
+                line-height: 28px;
 
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
 
+    .postmainsect__right {
+        width: 100%;
+        max-width: 53.5%;
+        flex: 0 0 53.5%;
+
+        img {
+            width: 100%;
+            filter: drop-shadow(0px 8px 10px rgba(0, 0, 0, 0.25));
+            border-radius: 40px;
+        }
+    }
+}
+
+.datepost {
+    text-align: right;
+    margin-top: 27px;
+    position: relative;
+    padding-bottom: 5px;
+
+    span {
+        display: inline-block;
+        color: #425387;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    &::after {
+        content: '';
+        display: block;
+        width: 100%;
+        max-width: 1440px;
+        height: 2px;
+        background: #D9D9D9;
+        border-radius: 10px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+    }
+}
+
+.waitlist.post {
+    padding-left: 115px;
+    padding-right: 115px;
+}
 
 
 
@@ -185,12 +244,28 @@
         text-align: left;
     }
 
+    .postmainsect .postmainsect__left,
+    .postmainsect .postmainsect__right {
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+    .postmainsect .postmainsect__right  {
+        margin-top: 20px;
+    }
 
+    .postmainsect .postmainsect__left {
+        padding-right: 0;
+    }
 
+    .postsect {
+        padding-bottom: 0;
+    }
 
-
-
-
+    .similarblogs,
+    .waitlist.post {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
 
 }
 
@@ -245,9 +320,7 @@
         line-height: 160%;
     }
 
-    .postsect:after {
-        width: calc(100% - 30px);
-    }
+  
 
     .similarblogs {
         padding: 30px 15px 60px;
@@ -263,8 +336,15 @@
         padding: 0 15px 30px 15px;
     }
 
+    .similarblogs,
+    .waitlist.post {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
 
-
-
+    .postsect p,
+    .postmainsect .postmainsect__left .descr p {
+        font-size: 16px;
+    }
 
 }

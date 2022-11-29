@@ -48,8 +48,8 @@ p {
 
 .welcomesect__info {
     width: 100%;
-    max-width: 36.3%;
-    flex: 0 0 36.3%;
+    max-width: 37.5%;
+    flex: 0 0 37.5%;
     padding-right: 57px;
 
     h1 {
@@ -157,8 +157,8 @@ p {
 
 .welcomesect__img {
     width: 100%;
-    max-width: 63.7%;
-    flex: 0 0 63.7%;
+    max-width: 62.5%;
+    flex: 0 0 62.5%;
     max-height: 523px;
     overflow: hidden;
     border-radius: 350px 0px 0px 350px;
@@ -174,7 +174,7 @@ p {
 
 // how it work
 .howitwork {
-    padding: 71px 120px 25px;
+    padding: 71px 120px 20px;
 }
 
 .sectdescr {
@@ -194,7 +194,7 @@ p {
 .steprow {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 50px;
+    margin-bottom: 47px;
     position: relative;
 
     &:last-child {
@@ -297,7 +297,7 @@ p {
         }
 
         &:nth-child(2) {
-            margin-bottom: 157px;
+            margin-bottom: 145px;
 
             .steparrow {
                 position: absolute;
