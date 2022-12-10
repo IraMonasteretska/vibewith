@@ -1,0 +1,114 @@
+.postsect h1.bgtitle, 
+.bgtitle {
+    padding: 49px 20px;
+    background: rgba(211, 227, 214, 0.5);
+    border-radius: 10px;
+    color: #1B264A;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 52px;
+    margin-bottom: 60px;
+    text-align: center;
+    margin-top: 0;
+}
+
+.postsect.aboutussect {
+    padding: 35px 72px 105px;
+
+    h3,
+    h2 {
+        margin-bottom: 10px;
+        margin-top: 0;
+    }
+
+    .textsect {
+        padding-right: 80px;
+    }
+}
+
+.d-flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.aboutcol {
+    width: 100%;
+    max-width: 54%;
+    flex: 0 0 54%;
+    padding-right: 75px;
+}
+
+.aboutcolimg {
+    width: 100%;
+    max-width: 46%;
+    flex: 0 0 46%;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.bordradimg {
+    filter: drop-shadow(0px 2px 6px #263238);
+    border-radius: 40px;
+    max-width: 100%;
+    width: 100%;
+}
+
+.imgtitle {
+    text-align: left;
+    color: #425387;
+    font-size: 18px;
+    line-height: 28px;
+    padding-left: 30px;
+    margin: 6px 0 0 0;
+}
+
+
+
+
+
+
+@media(max-width:1199.8px) {
+
+    .bgtitle, .postsect h1.bgtitle {
+        padding: 20px;
+        font-size: 28px;
+    }
+
+    .postsect h1.bgtitle {
+        margin-bottom: 30px;
+    }
+
+    .aboutcol,
+    .aboutcolimg  {
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+
+    .aboutcolimg  {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .postsect.aboutussect .textsect {
+        padding-right: 0;
+    }
+
+    .aboutcol {
+        padding-right: 0;
+    }
+
+}
+
+@media(max-width:991.8px) {
+    .postsect.aboutussect {
+        padding: 35px 50px 100px;
+    }
+}
+
+@media(max-width:575.8px) {
+    .postsect.aboutussect {
+        padding: 35px 15px 60px;
+    }
+}

@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Main</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -15,7 +16,7 @@
             <div class="container">
                 <div class="header__wrapper">
                     <div class="header__logo">
-                        <a href="#">
+                        <a href="index.html">
                             <img src="img/logo.svg" alt="logo">
                         </a>
                     </div>
@@ -23,8 +24,8 @@
                         <nav>
                             <ul>
                                 <li><a href="#">Events</a></li>
-                                <li><a href="#">Blogs</a></li>
-                                <li><a class="header__btn" href="#">LOGIN</a></li>
+                                <li><a href="blog.html">Blogs</a></li>
+                                <li><a class="header__btn" href="contact.html">LOGIN</a></li>
                             </ul>
                         </nav>
 
@@ -44,14 +45,27 @@
                 <div class="container">
                     <div class="welcomesect__container">
                         <div class="welcomesect__info">
-                            <h1>Vibe with <span>your tribe.</span></h1>
+                            <h1>
+                                <div class="lettercolor">
+                                    <span>V</span>
+                                    <span>i</span>
+                                    <span>b</span>
+                                    <span>e</span>
+                                    &nbsp;
+                                    <span>w</span>
+                                    <span>i</span>
+                                    <span>t</span>
+                                    <span>h</span>
+                                </div>
+                                <span>your tribe.</span>
+                            </h1>
                             <p>
                                 Trade and earn passive income from your own cryptos
                                 on the most popular decentralized platform.
                             </p>
                             <div class="welcomesect__links">
-                                <a href="#" class="greenbtn">SIGN UP</a>
-                                <a href="#">
+                                <a href="contact.html" class="greenbtn">SIGN UP</a>
+                                <a class="scrolllink" href="#howitwork">
                                     How does it work?
                                 </a>
                             </div>
@@ -65,14 +79,14 @@
                                 </form>
                             </div>
                         </div>
-                        <div class="welcomesect__img">
+                        <div class="welcomesect__img" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="500">
                             <img src="img/mainpic.png" alt="Vibe with your tribe.">
                         </div>
                     </div>
                 </div>
             </section>
 
-            <section class="howitwork">
+            <section class="howitwork" id="howitwork">
                 <div class="container">
                     <h2 class="secttitle">How does it work?</h2>
                     <div class="sectdescr">
@@ -82,7 +96,7 @@
                         </p>
                     </div>
                     <div class="stepswrapper">
-                        <div class="steprow">
+                        <div class="steprow" data-aos="fade-right" data-aos-duration="1000" >
                             <div class="stepimg">
                                 <img src="img/step1.svg" alt="step img">
                             </div>
@@ -96,12 +110,12 @@
                                             publishing industriesfor previewing layouts
                                         </p>
                                     </div>
-                                    <a href="#" class="joinlink">Join now</a>
+                                    <a href="#waitlist" class="joinlink">Join now</a>
                                 </div>
                             </div>
                             <img class="steparrow" src="img/steparrow1.svg" alt="arrow">
                         </div>
-                        <div class="steprow">
+                        <div class="steprow" data-aos="fade-left" data-aos-duration="1000" >
                             <div class="stepimg">
                                 <img src="img/step2.svg" alt="step img">
                             </div>
@@ -115,12 +129,12 @@
                                             publishing industriesfor previewing layouts
                                         </p>
                                     </div>
-                                    <a href="#" class="joinlink">Join now</a>
+                                    <a href="#waitlist" class="joinlink">Join now</a>
                                 </div>
                             </div>
                             <img class="steparrow" src="img/steparrow2.svg" alt="arrow">
                         </div>
-                        <div class="steprow">
+                        <div class="steprow" data-aos="fade-right" data-aos-duration="1000" >
                             <div class="stepimg">
                                 <img src="img/step3.svg" alt="step img">
                             </div>
@@ -134,7 +148,7 @@
                                             publishing industriesfor previewing layouts
                                         </p>
                                     </div>
-                                    <a href="#" class="joinlink">Join now</a>
+                                    <a href="#waitlist" class="joinlink">Join now</a>
                                 </div>
                             </div>
                         </div>
@@ -146,12 +160,12 @@
                 <div class="container">
                     <div class="featuredblogs__title">
                         <h2 class="secttitle">Featured Blogs</h2>
-                        <a href="#">See All</a>
+                        <a href="blog.html">See All</a>
                     </div>
                     
                     <div class="featuredblogs__wrapper">
                         <div class="featuredblogs__col">
-                            <a href="#">
+                            <a href="post.html">
                                 <div class="featuredblogs__box">
                                     <img src="img/blog1.png" alt="img">
                                     <div class="articlebox">
@@ -165,7 +179,7 @@
                             </a>
                         </div>
                         <div class="featuredblogs__col">
-                            <a href="#">
+                            <a href="post.html">
                                 <div class="featuredblogs__box">
                                     <img src="img/blog2.png" alt="img">
                                     <div class="articlebox">
@@ -179,7 +193,7 @@
                             </a>
                         </div>
                         <div class="featuredblogs__col">
-                            <a href="#">
+                            <a href="post.html">
                                 <div class="featuredblogs__box">
                                     <img src="img/blog3.png" alt="img">
                                     <div class="articlebox">
@@ -196,7 +210,7 @@
                 </div>
             </section>
 
-            <section class="howitwork community">
+            <section class="howitwork community" data-aos="fade-up" data-aos-duration="1000">
                 <div class="container">
                     <div class="stepswrapper">
                         <div class="steprow steprow__center">
@@ -212,7 +226,7 @@
                                             publishing industriesfor previewing layouts
                                         </p>
                                     </div>
-                                    <a href="#" class="joinlink">Join now</a>
+                                    <a href="#waitlist" class="joinlink">Join now</a>
                                 </div>
                             </div>
                         </div>
@@ -220,7 +234,7 @@
                 </div>
             </section>
 
-            <section class="waitlist">
+            <section class="waitlist" id="waitlist">
                 <div class="container">
                     <div class="waitlist__row">
                         <div class="waitlist__col">
@@ -238,7 +252,12 @@
                         </div>
                         <div class="waitlist__col">
                             <div class="picwrap">
-                                <img src="img/waitlist.svg" alt="img">
+                                <!-- <img src="img/waitlist.svg" alt="img"> -->
+                                <div class="waitlist__images">
+                                    <img src="img/new/waitlist1.png" alt="img" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="200">
+                                    <img src="img/new/waitlist2.png" alt="img" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+                                    <img src="img/new/waitlist3.png" alt="img" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -255,8 +274,8 @@
                         <div class="footerlist">
                             <p class="title">COMPANY</p>
                             <ul>
-                                <li><a href="#">About</a></li>
-                                <li><a href="#">Contact Us</a></li>
+                                <li><a href="aboutus.html">About</a></li>
+                                <li><a href="contact.html">Contact Us</a></li>
                             </ul>
                         </div>
                         <div class="footerlist">
@@ -272,13 +291,14 @@
             </div>
             <div class="footer__bottsect">
                 <div class="container">
-                    <p>@ Copyright- Swiftcore Technologies </p>
+                    <p><a href="https://swiftcoretech.com/" target="_blank">@ Copyright- Swiftcore Technologies</a></p>
                 </div>
             </div>
         </footer>
     </div>
 
-
+    <script src="js/jquery.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="js/common.js"></script>
 </body>
 

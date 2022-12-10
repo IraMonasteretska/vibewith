@@ -1,0 +1,274 @@
+header.header {
+    display: flex;
+    align-items: center;
+}
+
+.header__logo a {
+    height: auto;
+}
+
+.header__nav ul li a {
+    margin-bottom: 0;
+}
+
+.header__nav ul {
+    align-items: center;
+}
+
+.welcomesect__info .joinform__title:after {
+    animation: paintsplash 1s;
+    animation-delay: 0.5s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes paintsplash {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 200px;
+    }
+}
+
+.lettercolor {
+    display: inline-flex;
+    align-items: center;
+
+    span {
+        animation: lettercolor 0.3s;
+        animation-delay: 0.5s;
+        animation-timing-function: ease-in-out;
+        animation-fill-mode: forwards;
+
+        &:nth-child(1) {
+            animation-delay: 0s;
+        }
+
+        &:nth-child(2) {
+            animation-delay: 0.1s;
+        }
+
+        &:nth-child(3) {
+            animation-delay: 0.2s;
+        }
+
+        &:nth-child(4) {
+            animation-delay: 0.3s;
+        }
+
+        &:nth-child(5) {
+            animation-delay: 0.4s;
+        }
+
+        &:nth-child(6) {
+            animation-delay: 0.5s;
+        }
+
+        &:nth-child(7) {
+            animation-delay: 0.6s;
+        }
+
+        &:nth-child(8) {
+            animation-delay: 0.7s;
+        }
+    }
+}
+
+@keyframes lettercolor {
+    0% {
+        color: #1F1F39;
+    }
+
+    100% {
+        color: #F6BA59;
+    }
+}
+
+.stepswrapper .steprow:first-child .steparrow {
+    animation: steparrow 4s infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes steparrow {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    50% {
+        transform: translate(-15px, 10px);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+.stepswrapper .steprow:nth-child(2) .steparrow {
+    animation: steparrow2 4s infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes steparrow2 {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    50% {
+        transform: translate(15px, 10px);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+.waitlist__images {
+    width: 100%;
+    max-width: 521px;
+    height: 440px;
+    position: relative;
+
+    img {
+        position: absolute;
+
+        &:nth-child(1) {
+            left: 0;
+            bottom: 0;
+            z-index: 2;
+        }
+
+        &:nth-child(2) {
+            right: 0;
+            top: 0;
+            z-index: 1;
+        }
+
+        &:nth-child(3) {
+            right: 12%;
+            bottom: 9%;
+            z-index: 3;
+        }
+
+
+    }
+
+
+}
+
+.waitlist__row .waitlist__col img {
+    max-width: 100%;
+}
+
+.footer__bottsect p a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.postsect h2 {
+    color: #1B264A;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 40px;
+    margin: 0 0 20px 0;
+    margin-top: 26px;
+}
+
+.similarblogs h3 {
+    margin: 0 0 24px 0;
+    color: #1B264A;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 52px;
+}
+
+
+
+
+
+
+
+@media(max-width:1024.8px) {
+    .waitlist__images img {
+        &:nth-child(1) {
+            width: 260px;
+        }
+
+        &:nth-child(2) {
+            width: 190px;
+        }
+
+        &:nth-child(3) {
+            width: 140px;
+        }
+    }
+
+    .waitlist__images {
+        height: 310px;
+        max-width: 410px;
+    }
+}
+
+@media(max-width:991.8px) {
+    .waitlist__images {
+        max-width: 520px;
+        height: 470px;
+
+        img {
+            &:nth-child(1) {
+                width: auto;
+            }
+
+            &:nth-child(2) {
+                width: auto;
+            }
+
+            &:nth-child(3) {
+                width: auto;
+            }
+        }
+    }
+
+    .similarblogs h3 {
+        font-size: 26px;
+    }
+
+
+}
+
+@media(max-width:767.8px) {
+    .waitlist__images {
+        height: 400px;
+    }
+}
+
+@media(max-width:575.8px) {
+    .waitlist__images img {
+        &:nth-child(1) {
+            width: 210px;
+        }
+
+        &:nth-child(2) {
+            width: 160px;
+        }
+
+        &:nth-child(3) {
+            width: 120px;
+        }
+    }
+
+    .waitlist__images {
+        height: 285px;
+        max-width: 350px;
+    }
+
+    .postsect h2 {
+        line-height: 160%;
+    }
+
+    .similarblogs h3 {
+        font-size: 21px;
+        line-height: 160%;
+        margin-bottom: 15px;
+    }
+}

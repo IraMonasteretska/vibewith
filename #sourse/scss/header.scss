@@ -81,6 +81,35 @@ header.header {
     display: none;
 }
 
+
+// update
+.header__nav ul li a {
+    border-radius: 10px;
+}
+
+.header__nav ul li.active a {
+    color: #365359;
+    background: #F0F2F2;
+    font-weight: 700;
+    padding: 3px 23px 6px;
+}
+
+.header__nav ul li {
+    margin-right: 67px;
+}
+
+.header__nav ul li a.active {
+    font-weight: 700;
+    color: #000;
+}
+
+
+
+
+
+
+
+
 @media(max-width:1199.8px) {
 
     .header__nav {

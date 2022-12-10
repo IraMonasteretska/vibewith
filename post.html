@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Post</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -15,7 +16,7 @@
             <div class="container">
                 <div class="header__wrapper">
                     <div class="header__logo">
-                        <a href="#">
+                        <a href="index.html">
                             <img src="img/logo.svg" alt="logo">
                         </a>
                     </div>
@@ -23,8 +24,8 @@
                         <nav>
                             <ul>
                                 <li><a href="#">Events</a></li>
-                                <li><a href="#">Blogs</a></li>
-                                <li><a class="header__btn" href="#">LOGIN</a></li>
+                                <li class="active"><a href="blog.html">Blogs</a></li>
+                                <li><a class="header__btn" href="contact.html">LOGIN</a></li>
                             </ul>
                         </nav>
 
@@ -66,7 +67,7 @@
                     </div>
 
                     <div class="textsect">
-                        <h3>Subheading 1</h3>
+                        <h2>Subheading 1</h2>
                         <p>
                             Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing
                             industriesfor previewing layouts. Lorem ipsum is placeholder text commonly used in the
@@ -137,7 +138,7 @@
                         </p>
                     </div>
                     <div class="datepost">
-                        <span>Publist Date: 30 October 2022</span>
+                        <span>Publish Date: 30 October 2022</span>
                     </div>
                 </div>
 
@@ -149,10 +150,10 @@
 
             <section class="similarblogs">
                 <div class="container">
-                    <h2>Similar Blogs</h2>
+                    <h3>Similar Blogs</h3>
                     <div class="featuredblogs__wrapper">
                         <div class="featuredblogs__col">
-                            <a href="#">
+                            <a href="post.html">
                                 <div class="featuredblogs__box">
                                     <img src="img/blog1.png" alt="img">
                                     <div class="articlebox">
@@ -166,7 +167,7 @@
                             </a>
                         </div>
                         <div class="featuredblogs__col">
-                            <a href="#">
+                            <a href="post.html">
                                 <div class="featuredblogs__box">
                                     <img src="img/blog2.png" alt="img">
                                     <div class="articlebox">
@@ -180,7 +181,7 @@
                             </a>
                         </div>
                         <div class="featuredblogs__col">
-                            <a href="#">
+                            <a href="post.html">
                                 <div class="featuredblogs__box">
                                     <img src="img/blog3.png" alt="img">
                                     <div class="articlebox">
@@ -215,7 +216,12 @@
                         </div>
                         <div class="waitlist__col">
                             <div class="picwrap">
-                                <img src="img/waitlist.svg" alt="img">
+                                <!-- <img src="img/waitlist.svg" alt="img"> -->
+                                <div class="waitlist__images">
+                                    <img src="img/new/waitlist1.png" alt="img" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="200">
+                                    <img src="img/new/waitlist2.png" alt="img" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+                                    <img src="img/new/waitlist3.png" alt="img" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -232,8 +238,8 @@
                         <div class="footerlist">
                             <p class="title">COMPANY</p>
                             <ul>
-                                <li><a href="#">About</a></li>
-                                <li><a href="#">Contact Us</a></li>
+                                <li><a href="aboutus.html">About</a></li>
+                                <li><a href="contact.html">Contact Us</a></li>
                             </ul>
                         </div>
                         <div class="footerlist">
@@ -249,13 +255,14 @@
             </div>
             <div class="footer__bottsect">
                 <div class="container">
-                    <p>@ Copyright- Swiftcore Technologies </p>
+                    <p><a href="https://swiftcoretech.com/" target="_blank">@ Copyright- Swiftcore Technologies</a></p>
                 </div>
             </div>
         </footer>
     </div>
 
-
+    <script src="js/jquery.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="js/common.js"></script>
 </body>
 
