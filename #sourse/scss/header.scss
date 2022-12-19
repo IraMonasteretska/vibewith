@@ -2,7 +2,8 @@ header.header {
     height: 88px;
     padding: 0 28px;
     background: rgba(255, 255, 255, 0.6);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    box-shadow: 0px 4px 9px rgba(235, 235, 235, 0.6);
 
     .header__wrapper {
 
@@ -62,12 +63,12 @@ header.header {
             }
 
             .header__btn {
-                padding: 13px 66px;
+                padding: 11px 75px;
                 color: #fff;
                 font-weight: 700;
                 font-size: 16px;
                 line-height: 26px;
-                background: #365359;
+                background: rgba(54, 83, 89, 0.95);
                 border-radius: 20px;
                 text-transform: uppercase;
                 margin-bottom: 0;

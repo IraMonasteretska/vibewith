@@ -148,7 +148,7 @@ p {
         border: none;
         outline: none;
         padding: 0;
-        height: 42px;
+        height: 40px;
         width: 100%;
         max-width: 33%;
         flex: 0 0 33%;
@@ -490,7 +490,7 @@ p {
     cursor: pointer;
 
     &:hover {
-        background: #366f7a;
+        background: #365359;
     }
 }
 
@@ -507,7 +507,7 @@ p {
     transition: 0.3s;
 
     &:focus {
-        border-color: #366f7a;
+        background: #365359;
     }
 }
 

@@ -16,9 +16,11 @@ header.header {
 }
 
 .welcomesect__info .joinform__title:after {
-    animation: paintsplash 1s;
-    animation-delay: 0.5s;
+    animation: paintsplash 1.5s;
+    animation-delay: 1s;
     animation-timing-function: ease-in-out;
+    width: 0;
+    animation-fill-mode: forwards;
 }
 
 @keyframes paintsplash {
@@ -36,7 +38,7 @@ header.header {
     align-items: center;
 
     span {
-        animation: lettercolor 0.3s;
+        animation: lettercolor 0.5s;
         animation-delay: 0.5s;
         animation-timing-function: ease-in-out;
         animation-fill-mode: forwards;
@@ -85,43 +87,43 @@ header.header {
     }
 }
 
-.stepswrapper .steprow:first-child .steparrow {
-    animation: steparrow 4s infinite;
-    animation-timing-function: ease-in-out;
-}
+// // .stepswrapper .steprow:first-child .steparrow {
+// //     animation: steparrow 4s infinite;
+// //     animation-timing-function: ease-in-out;
+// // }
 
-@keyframes steparrow {
-    0% {
-        transform: translate(0, 0);
-    }
+// @keyframes steparrow {
+//     0% {
+//         transform: translate(0, 0);
+//     }
 
-    50% {
-        transform: translate(-15px, 10px);
-    }
+//     50% {
+//         transform: translate(-15px, 10px);
+//     }
 
-    100% {
-        transform: translate(0, 0);
-    }
-}
+//     100% {
+//         transform: translate(0, 0);
+//     }
+// }
 
-.stepswrapper .steprow:nth-child(2) .steparrow {
-    animation: steparrow2 4s infinite;
-    animation-timing-function: ease-in-out;
-}
+// .stepswrapper .steprow:nth-child(2) .steparrow {
+//     animation: steparrow2 4s infinite;
+//     animation-timing-function: ease-in-out;
+// }
 
-@keyframes steparrow2 {
-    0% {
-        transform: translate(0, 0);
-    }
+// @keyframes steparrow2 {
+//     0% {
+//         transform: translate(0, 0);
+//     }
 
-    50% {
-        transform: translate(15px, 10px);
-    }
+//     50% {
+//         transform: translate(15px, 10px);
+//     }
 
-    100% {
-        transform: translate(0, 0);
-    }
-}
+//     100% {
+//         transform: translate(0, 0);
+//     }
+// }
 
 .waitlist__images {
     width: 100%;
@@ -271,4 +273,9 @@ header.header {
         line-height: 160%;
         margin-bottom: 15px;
     }
+
+    .header__logo a {
+        height: 60px !important;
+    }
 }
+

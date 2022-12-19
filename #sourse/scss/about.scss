@@ -49,10 +49,10 @@
 }
 
 .bordradimg {
-    filter: drop-shadow(0px 2px 6px #263238);
     border-radius: 40px;
     max-width: 100%;
     width: 100%;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.2));
 }
 
 .imgtitle {

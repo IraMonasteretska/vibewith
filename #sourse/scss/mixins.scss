@@ -1,11 +1,16 @@
 @mixin greenbtn {
-    background: #365359;
+    transition: 0.3s;
+    background: rgba(54, 83, 89, 0.95);
     border-radius: 20px;
     color: #fff;
     font-weight: 700;
     font-size: 16px;
     line-height: 26px;
     text-decoration: none;
+
+    &:hover {
+        background: #365359;
+    }
 }
 
 .secttitle {
