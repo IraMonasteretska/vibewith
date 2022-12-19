@@ -87,43 +87,45 @@ header.header {
     }
 }
 
-// // .stepswrapper .steprow:first-child .steparrow {
-// //     animation: steparrow 4s infinite;
-// //     animation-timing-function: ease-in-out;
-// // }
+.stepswrapper .steprow:first-child .steparrow {
+    // animation: steparrow 4s infinite;
+    // animation-timing-function: ease-in-out;
+    // animation-delay: 4s;
+}
 
-// @keyframes steparrow {
-//     0% {
-//         transform: translate(0, 0);
-//     }
+@keyframes steparrow {
+    0% {
+        transform: translate(0, 0);
+    }
 
-//     50% {
-//         transform: translate(-15px, 10px);
-//     }
+    50% {
+        transform: translate(-15px, 10px);
+    }
 
-//     100% {
-//         transform: translate(0, 0);
-//     }
-// }
+    100% {
+        transform: translate(0, 0);
+    }
+}
 
-// .stepswrapper .steprow:nth-child(2) .steparrow {
-//     animation: steparrow2 4s infinite;
-//     animation-timing-function: ease-in-out;
-// }
+.stepswrapper .steprow:nth-child(2) .steparrow {
+    // animation: steparrow2 4s infinite;
+    // animation-timing-function: ease-in-out;
+    // animation-delay: 4s;
+}
 
-// @keyframes steparrow2 {
-//     0% {
-//         transform: translate(0, 0);
-//     }
+@keyframes steparrow2 {
+    0% {
+        transform: translate(0, 0);
+    }
 
-//     50% {
-//         transform: translate(15px, 10px);
-//     }
+    50% {
+        transform: translate(15px, 10px);
+    }
 
-//     100% {
-//         transform: translate(0, 0);
-//     }
-// }
+    100% {
+        transform: translate(0, 0);
+    }
+}
 
 .waitlist__images {
     width: 100%;
@@ -197,6 +199,10 @@ header.header {
     //   opacity: 1;
     //   display: block;
     opacity: 1;
+
+    animation: steparrow 4s infinite;
+    animation-timing-function: ease-in-out;
+    animation-delay: 3s;
     .line {
         animation: dash 4s ease-in-out;
         stroke-dasharray: 500;
@@ -206,6 +212,30 @@ header.header {
     }
   }
 
+
+  [data-aos="example-anim2"] {
+    // transform: skewX(45deg);
+    // opacity: 0;
+    // transition-property: transform, opacity;
+    // display: none;
+    opacity: 0;
+    &.aos-animate {
+    //   transform: skewX(0);
+    //   opacity: 1;
+    //   display: block;
+    opacity: 1;
+
+     animation: steparrow2 4s infinite;
+    animation-timing-function: ease-in-out;
+    animation-delay: 3s;
+    .line {
+        animation: dash 4s ease-in-out;
+        stroke-dasharray: 500;
+        stroke-dashoffset: 500;
+         animation-fill-mode: forwards;
+    }
+    }
+  }
 
    
 //   .line {
