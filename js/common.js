@@ -24,3 +24,12 @@ $('.joinlink, .scrolllink').on( 'click', function(){
     return false;
 });
 
+$(document).ready(function(){
+    $('.joinform .formfield .inputbtn').click(function(e){
+        e.preventDefault();
+        $(this).parents('form').addClass('hide');
+        $(this).parents('form').next('.success-text').addClass('show');
+    });
+
+
+});
